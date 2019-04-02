@@ -1,0 +1,71 @@
+.modal {
+
+  &-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &-info {
+    position: relative;
+    border-top: 5px solid #da513d;
+    border-bottom: 5px solid #ddd;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    padding: 30px 15px 50px 15px;
+    background-color: white;
+    width: 600px;
+    animation: zoomIn 0.5s;
+  }
+
+  &-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  &-tip {
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+
+  &-text {
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    font-family: "Courier New", sans-serif;
+  }
+
+  &-btn {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  &-close {
+    display: none;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

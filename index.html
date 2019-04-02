@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Игра - Камень Ножницы Бумага</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>Камень Ножницы Бумага</h1>
+</header>
+
+<div class="score-board">
+  <div id="user-label" class="score-board-badge score-board-badge-user">Пользователь</div>
+  <div id="computer-label" class="score-board-badge score-board-badge-computer">Компьютер</div>
+  <span id="user-score" class="score-board-user">0</span>:<span id="computer-score" class="score-board-computer">0</span>
+</div>
+
+<div class="result">
+  <p class="result-title">Игра пока не началась.</p>
+</div>
+
+<div class="choices">
+  <div class="choice" id="r">
+    <img src="img/rock.svg" alt="Камень">
+  </div>
+  <div class="choice" id="p">
+    <img src="img/paper.svg" alt="Бумага">
+  </div>
+  <div class="choice" id="s">
+    <img src="img/scissors.svg" alt="Ножницы">
+  </div>
+</div>
+
+<div id="message" class="message">Сделайте свой выбор!</div>
+
+<section class="modal">
+  <div class="modal-overlay">
+    <div class="modal-info">
+      <div class="modal-title">Игра - Камень Ножницы Бумага</div>
+      <div class="modal-tip">Правила</div>
+      <div class="modal-text">
+        Бумага накрывает камень, камень тупит ножницы, ножницы режут бумагу. Таким образом, все участники имеют равный шанс победить.
+        Если хотя бы три человека из компании выбросили разные жесты, то есть, присутствует и камень, и ножницы, и бумага, то объявляется ничья,
+        и тур переигрывается.
+      </div>
+      <button type="button" class="btn btn-out modal-btn">Понятно</button>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
