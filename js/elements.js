@@ -7,6 +7,7 @@ const rockDiv = document.getElementById(`r`);
 const paperDiv = document.getElementById(`p`);
 const scissorsDiv = document.getElementById(`s`);
 const modal = document.querySelector(`.modal`);
+const help = document.querySelector(`.help`);
 const modalBtn = modal.querySelector(`.modal-btn`);
 
 export const Elements = {
@@ -19,5 +20,6 @@ export const Elements = {
   paperDiv,
   scissorsDiv,
   modal,
-  modalBtn
+  modalBtn,
+  help
 };

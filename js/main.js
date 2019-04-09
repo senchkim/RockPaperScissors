@@ -1,5 +1,6 @@
 import {Elements} from './elements';
 import {game} from './game';
+import {closePopup} from './popup';
 
 const init = () => {
   Elements.rockDiv.addEventListener(`click`, () => game(`r`));
@@ -7,11 +8,5 @@ const init = () => {
   Elements.scissorsDiv.addEventListener(`click`, () => game(`s`));
 };
 
-const closePopup = () => {
-  Elements.modalBtn.addEventListener(`click`, () => {
-    Elements.modal.classList.add(`modal-close`);
-  });
-  init();
-};
-
 closePopup();
+init();

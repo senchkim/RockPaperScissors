@@ -7,16 +7,32 @@
 }
 
 body {
-  background-color: #24272E;
+  background-color: $main-bg-color;
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   padding: 20px;
 }
 
 header > h1 {
-  color: #24272E;
+  color: $main-bg-color;
   text-align: center;
   font-family: Asap, sans-serif;
+}
+
+.help {
+  margin-left: 15px;
+  border: 1px solid $main-bg-color;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
 }
