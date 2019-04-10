@@ -9,35 +9,14 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <h1>Камень Ножницы Бумага</h1>
-  <div class="help">?</div>
+<header class="page-header">
+  <h1 class="page-header-title">Камень Ножницы Бумага</h1>
+  <div class="help page-header-help">?</div>
 </header>
 
-<div class="score-board">
-  <div id="user-label" class="score-board-badge score-board-badge-user">Пользователь</div>
-  <div id="computer-label" class="score-board-badge score-board-badge-computer">Компьютер</div>
-  <span id="user-score" class="score-board-user">0</span>:<span id="computer-score" class="score-board-computer">0</span>
-</div>
+<main id="main" class="main"></main>
 
-<div class="result">
-  <p class="result-title">Игра пока не началась.</p>
-</div>
-
-<div class="choices">
-  <div class="choice" id="r">
-    <img src="img/rock.svg" alt="Камень">
-  </div>
-  <div class="choice" id="p">
-    <img src="img/paper.svg" alt="Бумага">
-  </div>
-  <div class="choice" id="s">
-    <img src="img/scissors.svg" alt="Ножницы">
-  </div>
-</div>
-
-<div id="message" class="message">Сделайте свой выбор!</div>
-
+<!-- Модальное окно помощь по игре -->
 <section class="modal">
   <div class="modal-overlay">
     <div class="modal-info">

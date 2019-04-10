@@ -1,12 +1,5 @@
-import {Elements} from './elements';
-import {game} from './game';
-import {closePopup} from './popup';
+import {changeScreen} from './util';
+import introTemplate from './intro';
 
-const init = () => {
-  Elements.rockDiv.addEventListener(`click`, () => game(`r`));
-  Elements.paperDiv.addEventListener(`click`, () => game(`p`));
-  Elements.scissorsDiv.addEventListener(`click`, () => game(`s`));
-};
+changeScreen(introTemplate);
 
-closePopup();
-init();
